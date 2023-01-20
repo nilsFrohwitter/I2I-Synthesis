@@ -8,7 +8,7 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 import torch.nn as nn
 from torch.nn import init
 import numpy as np
-from models.modules import get_norm_layer, ResidualBlock, ConvStride2Block, ConvTransposeBlock, ConvBlock
+from .modules import get_norm_layer, ResidualBlock, ConvStride2Block, ConvTransposeBlock, ConvBlock
 
 
 
