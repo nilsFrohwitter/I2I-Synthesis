@@ -46,7 +46,7 @@ date = datetime.datetime.now().strftime('%y-%m-%d_%H-%M-%S')
 data_root = '/media/sf_sharedfoulderVM/val_images/' + run
 segm_dir = "/media/sf_sharedfoulderVM/val_images/all_seg"
 dice_save_dir = "/media/sf_sharedfoulderVM/results"
-sep = "/"
+sep = os.path.sep
 
 
 if framework != 'ANTs':
