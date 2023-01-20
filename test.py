@@ -1,8 +1,8 @@
 from datasets.create_datasets import create_test_dataset
 from options.test_options import TestOptions
 from models.init import *
-from util import init_volumes
-from savefile import save_as_nifti, save_orig_nifti
+from utils.util import init_volumes
+from utils.savefile import save_as_nifti, save_orig_nifti
 from evaluation.hist_plot import *
 import torch
 import os
