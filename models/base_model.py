@@ -8,9 +8,9 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 from torch.optim import lr_scheduler
 import torch
 import os
-from visualization import visualize
+from utils.visualization import visualize
 from collections import OrderedDict
-from savefile import save_state, load_state_test, save_as_nifti, save_images
+from utils.savefile import save_state, load_state_test, save_as_nifti, save_images
 from datasets.dataset_utils import transform_to_HU
 from torch.nn import functional as nnf
 import torchvision.utils as utils
