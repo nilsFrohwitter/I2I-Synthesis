@@ -4,10 +4,10 @@ import os
 from options.train_options import TrainOptions
 from models.init import *
 import time
-from visualization import *
-from util import init_volumes
-from writer_funktions import *
-from savefile import save_orig_nifti
+from utils.visualization import *
+from utils.util import init_volumes
+from utils.writer_funktions import *
+from utils.savefile import save_orig_nifti
 import torch
 
 
