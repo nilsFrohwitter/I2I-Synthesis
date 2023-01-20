@@ -2,7 +2,7 @@ import numpy as np
 import nibabel as nib
 import os
 import csv
-from registration_methods.utils import get_dirs
+from registration.utils import get_dirs
 from evaluation.measures import *
 
 """
