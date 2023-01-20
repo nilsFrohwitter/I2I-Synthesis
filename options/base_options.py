@@ -8,7 +8,7 @@ https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 import argparse
 import os
 import uuid
-import util
+import utils.util
 import torch
 import datetime
 import csv
