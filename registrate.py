@@ -1,7 +1,7 @@
 import os
 import pickle
 import datetime
-from .registration_tools import *
+from registration.registration_tools import *
 from evaluation.eval_reg import calculate_initial_dice_values, calculate_dice_values
 
 """
