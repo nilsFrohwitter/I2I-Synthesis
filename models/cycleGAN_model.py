@@ -10,9 +10,9 @@ import itertools
 import torch.nn.functional as F
 import torch.nn as nn
 from .networks import Generator, Discriminator
-from models.additional_losses import MutualInformation
-from models.base_model import BaseModel, set_requires_grad
-from image_pool import ImagePool
+from .additional_losses import MutualInformation
+from .base_model import BaseModel, set_requires_grad
+from utils.image_pool import ImagePool
 
 
 class CycleGANModel(BaseModel):
