@@ -12,6 +12,8 @@ All of this was created under the work at the [DFKI](https://www.dfki.de/en/web)
 # Image Registration
 For the evaluation of the influence of MR-to-CT synthesis in MR-to-CT image registration, the registrate.py script was created. This python script makes use of the [ANTsPy](https://antspy.readthedocs.io/en/latest/) registration framework and performs the registration with the methods 'Rigid', 'SyN', 'SyNRA' and 'ElasticSyN' between case0:MR-CT, case1:Synthetic_CT-CT and case2:MR-Synthetic_MR. 
 
-To run the registration script, three parameters needs to be adopted:\n
-    'pat': This was the patient ID given as the suffix in the data directory. Either specify the data with this suffix or set it to None.
-           This way all data in this directory is getting registrated. 
+To run the registration script, three parameters needs to be adopted:
+'''
+'pat': This was the patient ID given as the suffix in the data directory. Either specify the data with this suffix or set it to None.
+       This way all data in this directory is getting registrated. 
+'''
