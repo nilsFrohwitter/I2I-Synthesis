@@ -43,9 +43,10 @@ overwrite_if_exists = False
 
 date = datetime.datetime.now().strftime('%y-%m-%d_%H-%M-%S')
 
-data_root = '/media/sf_sharedfoulderVM/val_images/' + run
-segm_dir = "/media/sf_sharedfoulderVM/val_images/all_seg"
-dice_save_dir = "/media/sf_sharedfoulderVM/results"
+dir_base = '/media/sf_sharedfoulderVM'
+data_root = os.path.join(dir_base, image_origin, run)
+segm_dir = os.path.join(dir_base, image_origin, 'all_seg')
+dice_save_dir = os.path.join(dir_base, 'results')
 sep = os.path.sep
 
 
@@ -55,7 +56,7 @@ if framework != 'ANTs':
 for _, method in enumerate(methods):
     print('starting with ' + str(method))
 
-    save_dir = '/media/sf_sharedfoulderVM/results/' + run + '/reg_results_new2'
+    save_dir = os.path.join(dice_save_dir, run, 'reg_results')
 
     if framework == 'ANTs':
         save_dir = save_dir + '_' + method
