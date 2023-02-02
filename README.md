@@ -10,10 +10,23 @@ I2I-Synthesis is a Image-to-Image Synthesis repository containing the CycleGAN f
 All of this was created under the work at the [DFKI](https://www.dfki.de/en/web).
 
 # Image Registration
-For the evaluation of the influence of MR-to-CT synthesis in MR-to-CT image registration, the registrate.py script was created. This python script makes use of the [ANTsPy](https://antspy.readthedocs.io/en/latest/) registration framework and performs the registration with the methods 'Rigid', 'SyN', 'SyNRA' and 'ElasticSyN' between case0:MR-CT, case1:Synthetic_CT-CT and case2:MR-Synthetic_MR. 
+For the evaluation of the influence of MR-to-CT synthesis in MR-to-CT image registration, the registrate.py script was created. This python script makes use of the [ANTsPy](https://antspy.readthedocs.io/en/latest/) registration framework and performs the registration with the methods:
+
+1. 'Rigid'
+2. 'SyN'
+3. 'SyNRA'
+4. 'ElasticSyN' 
+
+for the registration tasks:
+1. MR-CT (case0)
+2. Synthetic_CT-CT (case1)
+3. MR-Synthetic_MR (case2). 
+
 
 To run the registration script, three parameters needs to be adopted:
-```
+
 'pat': This was the patient ID given as the suffix in the data directory. Either specify the data with this suffix or set it to None.
        This way all data in this directory is getting registrated. 
-```
+'run': Specify the name of the run you want the model to be used.
+'image_origin': Set it to \[val_images|test_images\]
+
