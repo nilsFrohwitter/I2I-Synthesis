@@ -579,5 +579,3 @@ Werkzeug==1.0.0
 wrapt==1.10.11
 yacs==0.1.6
 zipp==3.1.0
-#additional packages
-nibabel==4.0.2
