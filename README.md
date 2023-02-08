@@ -30,7 +30,7 @@ To run the registration script, four parameters needs to be adopted:
 
    - 'pat': This was the patient ID given as the suffix in the data directory. Either specify the data with this suffix or set it to None.
       This way all data in this directory is getting registrated. 
-   - 'run': Specify the name of the run you want the model to be used.
+   - 'run': Specify the name of the run from the model you want to use.
    - 'image_origin': Set it to \[val_images|test_images\]. val_images is recommended, because of some hard coded parts.
    - 'dir_base': Specify the root for runs, data and results
 
