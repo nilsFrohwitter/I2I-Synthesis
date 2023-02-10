@@ -30,7 +30,7 @@ for the registration tasks:
 2. Synthetic_CT-CT (case1)
 3. MR-Synthetic_MR (case2). 
 
-Before running the registration, install the needed antspy package:
+Before running the registration, install the additional antspy package:
 
       pip install antspyx
 
