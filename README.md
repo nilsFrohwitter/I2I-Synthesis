@@ -16,6 +16,17 @@ For a detailed list of used packages, see [packages](used%20packages/packages.tx
 To run the script in a conda envirement (this requires anaconda), use following installation script:
 
 
+## Training
+To adapt the options of the model and of the training, see [base_options](options/base_options) and [train_options](options/train_options).
+After adaption and installation of the requirements, run the training with
+      
+      python train.py
+
+## Testing
+To adapt the options of the testing, see [test_options](options/test_options).
+After adaption and installation of the requirements, run the training with
+      
+      python test.py
 
 # Image Registration
 For the evaluation of the influence of MR-to-CT synthesis in MR-to-CT image registration, the registrate.py script was created. This python script makes use of the [ANTsPy](https://antspy.readthedocs.io/en/latest/) registration framework and performs the registration with the methods:
