@@ -1,0 +1,24 @@
+conda create -n CycleGANnew python=3.9
+
+# we used pytorch 1.10.1 and needed the CUDA 11.3 version
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+# pip installs
+pip install nibabel==3.2.1
+
+
+# conda installs
+conda install matplotlib
+
+
+
+### extra fuer Live-Synth:
+pip install opencv-python==4.5.5.62
+pip install PySimpleGUI
+
+
+### extra fuer die Registrierung:
+pip install antspyx
+pip install SimpleITK
+pip install itk
+pip install scikit-image==0.19.2
