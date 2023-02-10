@@ -16,6 +16,10 @@ The following parameters can or must be adopted:
 ## synth_on_cam_live
 This is the live version of synth_on_cam. This is not used for creating datasets or to save synthetic images, but rather to visualize the synthesis live. Starting the script creates a GUI with two shown images and three options as well as a Stop-button. The images are showing the video catched by the connected camera and the GUI is preset to 'no synth'. The other options are 'horse to zebra' and 'zebra to horse'. Pressing one of these other modes result in the right image showing the synthetic correspoding zebra or synthetic horse, depending on the mode. While the mode is beeing active, you can freely position different objects in front of the camera or e. g. hold the items in you hand.
 
+Before starting the script, you need to download one additional package:
+    
+    pip install PySimpleGUI
+
 The following parameters can or must be adopted:
   - show_on_laptop: set to False, when using a secondary screen.
   - img_size: you may need to adapt the image size to the resolution of your screen
