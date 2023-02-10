@@ -18,6 +18,7 @@ This is the live version of synth_on_cam. This is not used for creating datasets
 
 Before starting the script, you need to install one additional package:
     
+    pip install opencv-python==4.5.5.62
     pip install PySimpleGUI
 
 The following parameters can or must be adopted:
