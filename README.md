@@ -24,7 +24,7 @@ After adaption and installation of the requirements, run the training with
 
 ## Testing
 To adapt the options of the testing, see [test_options](options/test_options).
-After adaption and installation of the requirements, run the training with
+After adaption and installation of the requirements, run the testing with
       
       python test.py
 
