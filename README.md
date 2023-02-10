@@ -10,7 +10,12 @@ I2I-Synthesis is a Image-to-Image Synthesis repository containing the CycleGAN f
 All of this was created under the work at the [DFKI](https://www.dfki.de/en/web).
 
 ## Installation
-The training was done on an Linux OS, Ubuntu 18.04.01.
+The training was done on an cluster with Linux OS, Ubuntu 18.04.01, using NVIDIA enroot images.
+For a detailed list of used packages, see [packages](/used packages/packages.txt).
+
+To run the script in a conda envirement (this requires anaconda), use following installations:
+
+
 
 # Image Registration
 For the evaluation of the influence of MR-to-CT synthesis in MR-to-CT image registration, the registrate.py script was created. This python script makes use of the [ANTsPy](https://antspy.readthedocs.io/en/latest/) registration framework and performs the registration with the methods:
@@ -25,6 +30,9 @@ for the registration tasks:
 2. Synthetic_CT-CT (case1)
 3. MR-Synthetic_MR (case2). 
 
+Before running the registration, install the needed antspy package:
+
+      pip install antspyx
 
 To run the registration script, four parameters needs to be adopted:
 
