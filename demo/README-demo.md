@@ -28,9 +28,9 @@ The following parameters can or must be adopted:
   - checkpoint_name: set the specific run of your model
   - state: set the specific model states (epoch) you want to load
 
-This script uses multi-threading using the ThreadPoolExecutor of concurrent.features to increase the fps.
+This script uses multi-threading with the ThreadPoolExecutor of concurrent.features to increase the fps.
 
 ### Troubleshooting
-When using multiple monitors or try to run the demo on other monitors with different resolutions, the position of the window and the sizes of the displayed images can be tricky. If possible, set the monitor's resolution to 1920x1080 and use it as your primary screen. You might have to resize the image (set img_size) additionally so that the GUI can be displayed completely. The location of the window may also need to be adapted.
+When using multiple monitors or trying to run the demo on other monitors with different resolutions, the position of the window and the sizes of the displayed images can be tricky. If possible, set the monitor's resolution to 1920x1080 and use it as your primary screen. You might have to resize the image (set img_size) additionally so that the GUI can be displayed completely. The location of the window may also need to be adapted.
 
-Crashing the script may result in a hidden python script that blocks the camera. You may need to force quit this script.
+Crashing the script may result in a hidden python script that blocks the camera. You may need to force quit this script. Restarting the kernel (the console) may also work.
