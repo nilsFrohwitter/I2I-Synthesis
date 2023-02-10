@@ -11,7 +11,7 @@ All of this was created under the work at the [DFKI](https://www.dfki.de/en/web)
 
 ## Installation
 The training was done on an cluster with Linux OS, Ubuntu 18.04.01, using NVIDIA enroot images.
-For a detailed list of used packages, see [packages](used%20packages/packages.tx).
+For a detailed list of used packages, see [packages](used%20packages/packages.txt).
 
 To run the script in a conda envirement (this requires anaconda), use following installations:
 
