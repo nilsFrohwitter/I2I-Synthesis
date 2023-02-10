@@ -13,8 +13,16 @@ All of this was created under the work at the [DFKI](https://www.dfki.de/en/web)
 The training was done on an cluster with Linux OS, Ubuntu 18.04.01, using NVIDIA enroot images.
 For a detailed list of used packages, see [packages](used%20packages/packages.txt).
 
-To run the script in a conda envirement (this requires anaconda), use following installation script:
-
+To run the script in a conda envirement (this requires anaconda), use following installations:
+      
+      conda create -n CycleGANnew python=3.9
+      
+      # we used pytorch 1.10.1 and needed the CUDA 11.3 version
+      conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+      
+      pip install nibabel==3.2.1
+      conda install matplotlib
+      
 
 ## Training
 To adapt the options of the model and of the training, see [base_options](options/base_options) and [train_options](options/train_options).
@@ -44,6 +52,9 @@ for the registration tasks:
 Before running the registration, install the additional antspy package:
 
       pip install antspyx
+      pip install SimpleITK
+      pip install itk
+      pip install scikit-image==0.19.2
 
 To run the registration script, four parameters needs to be adopted:
 
