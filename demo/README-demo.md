@@ -29,4 +29,4 @@ This script uses multi-threading using the ThreadPoolExecutor of concurrent.feat
 ### Troubleshooting
 When using multiple monitors or try to run the demo on other monitors with different resolutions, the position of the window and the sizes of the displayed images can be tricky. If possible, set the monitor's resolution to 1920x1080 and use it as your primary screen. You might have to resize the image (set img_size) additionally so that the GUI can be displayed completely.
 
-
+Crashing the script may result in a hidden python script beeing executed that blocks the camera. You may need to force quit this script.
